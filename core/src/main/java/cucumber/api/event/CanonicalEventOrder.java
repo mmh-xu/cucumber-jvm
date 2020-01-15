@@ -73,7 +73,7 @@ final class CanonicalEventOrder implements Comparator<Event> {
                 return line;
             }
             
-            int name = Integer.compare(a.getTestCase().getName(), b.getTestCase().getName());
+            int name = a.getTestCase().getName().compareTo(b.getTestCase().getName());
             if(name != 0){
                 return name;
             }
